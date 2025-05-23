@@ -9,21 +9,33 @@ struct LoginView: View {
     var body: some View {
         VStack {
             VStack {
-                RoundedRectangle(cornerRadius: 17, style: .continuous)
-                    .fill(.yellow)
-                    .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
-                    .aspectRatio(1/1, contentMode: .fit)
-                    .clipped()
-                    .frame(width: 80)
-                    .clipped()
-                    .shadow(color: .black.opacity(0.12), radius: 8, x: 0, y: 4)
-                    .overlay {
-                        Image(systemName: "note.text")
-                            .imageScale(.large)
-                            .symbolRenderingMode(.monochrome)
-                            .font(.system(size: 31, weight: .regular, design: .default))
-                            .foregroundStyle(.black)
+//                RoundedRectangle(cornerRadius: 17, style: .continuous)
+//                    .fill(.yellow)
+//                    .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
+//                    .aspectRatio(1/1, contentMode: .fit)
+//                    .clipped()
+//                    .frame(width: 80)
+//                    .clipped()
+//                    .shadow(color: .black.opacity(0.12), radius: 8, x: 0, y: 4)
+//                    .overlay {
+//                        Image(systemName: "note.text")
+//                            .imageScale(.large)
+//                            .symbolRenderingMode(.monochrome)
+//                            .font(.system(size: 31, weight: .regular, design: .default))
+//                            .foregroundStyle(.black)
+//                    }
+                
+                Image(systemName: "note.text")
+                    .padding()
+                    .foregroundStyle(Color.black)
+                    .font(.system(size: 30))
+                    .background {
+                        RoundedRectangle(cornerRadius: 17)
+                            .foregroundStyle(Color.yellow)
                     }
+                    .shadow(color: .black.opacity(0.12), radius: 8, x: 0, y: 4)
+                
+                
                 Text("CocoClone")
                     .font(.system(.largeTitle, weight: .medium))
                 Text("Smart Notes, Effortless Learning")
@@ -87,6 +99,9 @@ struct LoginView: View {
         }
         .frame(maxWidth: .infinity)
         .clipped()
-        .padding(.top, 96)
     }
+}
+
+#Preview {
+    LoginView()
 }

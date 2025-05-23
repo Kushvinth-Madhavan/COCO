@@ -14,3 +14,8 @@
 
 
 
+## Insights by aadhi
+
+NavigationView -> NavigationView || ParentView -> NavigationView
+
+ 

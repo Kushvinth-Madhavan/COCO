@@ -18,6 +18,15 @@ struct GoogleSignInButton: View {
                     dismissButton: .default(Text("OK"))
                 )
             }
+        
+            // MARK: Please remove me below - By Kabin Eshwar RR
+            .padding(-3)
+            .padding(.horizontal, -1)
+            .padding(.bottom, -2)
+            .padding(.vertical, -1)
+            .mask {
+                RoundedRectangle(cornerRadius: 12)  // Remove me later
+            }
     }
 }
 
@@ -48,4 +57,8 @@ struct GoogleSignInButtonRepresentable: UIViewRepresentable {
             action()
         }
     }
+}
+
+#Preview {
+    LoginView()
 }

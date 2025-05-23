@@ -5,56 +5,53 @@ struct AllNotesView: View {
     @State private var showingNewNote = false
     
     var body: some View {
-        VStack {
-            HStack {
-                Spacer()
-                Image(systemName: "gear")
-                    .imageScale(.large)
-                    .symbolRenderingMode(.monochrome)
-                    .padding(.horizontal)
-            }
-            
-            Text("All Notes")
-                .font(.system(.largeTitle, weight: .bold))
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .clipped()
-                .padding(.leading)
-                .padding(.bottom, 8)
-            
-            ScrollView {
-                VStack {
-                    LazyVGrid(columns: [GridItem(.flexible(), spacing: 4)], spacing: 4) {
-                        ForEach(viewModel.notes) { note in
-                            NoteCard(note: note)
+        NavigationView {
+            VStack {
+                ScrollView {
+                    VStack {
+                        LazyVGrid(columns: [GridItem(.flexible(), spacing: 4)], spacing: 4) {
+                            ForEach(viewModel.notes) { note in
+                                NoteCard(note: note)
+                            }
                         }
+                        .padding(.horizontal)
                     }
-                    .padding(.horizontal)
+                    .frame(maxWidth: .infinity)
+                    .clipped()
                 }
-                .frame(maxWidth: .infinity)
+                .navigationTitle("All Notes") // thanks to
+                .toolbar {
+                    ToolbarItem(placement: .topBarTrailing, content: {
+                        Button(action: {}, label: {
+                            Image(systemName: "gear")
+                                .imageScale(.large)
+                                .symbolRenderingMode(.monochrome)
+                                .padding(.horizontal)
+                                .foregroundStyle(Color.primary)
+                        })
+                    })
+                }
+                
+                // New Note Button
+                VStack(spacing: 0) {
+                    Button(action: { showingNewNote.toggle() }) {
+                        RoundedRectangle(cornerRadius: 30, style: .continuous)
+                            .fill(.orange)
+                            .frame(width: 140, height: 50)
+                            .clipped()
+                            .overlay {
+                                Text("New Note")
+                                    .font(.headline)
+                                    .foregroundColor(.white)
+                            }
+                    }
+                }
+                .frame(height: 81, alignment: .top)
                 .clipped()
-                .padding(.top, 98)
-                .padding(.bottom, 150)
             }
-            
-            // New Note Button
-            VStack(spacing: 0) {
-                Button(action: { showingNewNote.toggle() }) {
-                    RoundedRectangle(cornerRadius: 30, style: .continuous)
-                        .fill(.orange)
-                        .frame(width: 140, height: 50)
-                        .clipped()
-                        .overlay {
-                            Text("New Note")
-                                .font(.headline)
-                                .foregroundColor(.white)
-                        }
-                }
+            .sheet(isPresented: $showingNewNote) {
+                NewNoteView(viewModel: viewModel)
             }
-            .frame(height: 81, alignment: .top)
-            .clipped()
-        }
-        .sheet(isPresented: $showingNewNote) {
-            NewNoteView(viewModel: viewModel)
         }
     }
 }
@@ -73,15 +70,14 @@ struct NoteCard: View {
                 .mask { RoundedRectangle(cornerRadius: 15, style: .continuous) }
             
             HStack {
-                Circle()
-                    .fill(Color(.tertiaryLabel))
-                    .frame(width: 50, height: 50)
-                    .clipped()
-                    .padding(.leading)
-                    .overlay {
-                        Text(note.emoji)
-                            .padding(.leading)
+                
+                Text(note.emoji)
+                    .padding()
+                    .background() {
+                        Circle()
+                            .fill(Color(.tertiaryLabel))
                     }
+                    .padding(.leading)
                 
                 VStack(alignment: .leading) {
                     Text(note.title)
@@ -127,4 +123,8 @@ struct NewNoteView: View {
             )
         }
     }
+}
+
+#Preview {
+    AllNotesView()
 }
