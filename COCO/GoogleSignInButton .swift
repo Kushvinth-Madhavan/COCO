@@ -49,7 +49,3 @@ struct GoogleSignInButtonRepresentable: UIViewRepresentable {
         }
     }
 }
-//struct SignInError: Identifiable {
-//    let id = UUID()
-//    let error: Error
-//}

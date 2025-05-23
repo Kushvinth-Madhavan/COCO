@@ -1,7 +1,6 @@
 import SwiftUI
 import GoogleSignIn
 import GoogleSignInSwift
-import GoogleSignIn
 
 struct LoginView: View {
     @StateObject private var authManager = AuthenticationManager.shared
