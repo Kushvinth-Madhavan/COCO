@@ -14,7 +14,7 @@
 
 
 
-## Insights by aadhi
+## Insights by Sr.Dev
 
 NavigationView -> NavigationView || ParentView -> NavigationView
 
