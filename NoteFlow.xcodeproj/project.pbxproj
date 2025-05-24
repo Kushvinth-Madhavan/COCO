@@ -10,6 +10,7 @@
 		526F814C2DDF0D0B0024BE09 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 526F814B2DDF0D0B0024BE09 /* GoogleSignIn */; };
 		526F814E2DDF0D0B0024BE09 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 526F814D2DDF0D0B0024BE09 /* GoogleSignInSwift */; };
 		526F81742DDF12090024BE09 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 526F81732DDF12090024BE09 /* README.md */; };
+		528E38CF2DE1BFD600BC52B6 /* Status.md in Resources */ = {isa = PBXBuildFile; fileRef = 528E38CE2DE1BFD600BC52B6 /* Status.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,7 @@
 		526F81142DDF090C0024BE09 /* NoteFlowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoteFlowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		526F811E2DDF090C0024BE09 /* NoteFlowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoteFlowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		526F81732DDF12090024BE09 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		528E38CE2DE1BFD600BC52B6 /* Status.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Status.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				526F81732DDF12090024BE09 /* README.md */,
+				528E38CE2DE1BFD600BC52B6 /* Status.md */,
 				526F81042DDF090A0024BE09 /* NoteFlow */,
 				526F81172DDF090C0024BE09 /* NoteFlowTests */,
 				526F81212DDF090C0024BE09 /* NoteFlowUITests */,
@@ -240,6 +243,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				528E38CF2DE1BFD600BC52B6 /* Status.md in Resources */,
 				526F81742DDF12090024BE09 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
