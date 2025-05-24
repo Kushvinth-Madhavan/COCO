@@ -51,6 +51,7 @@ struct AllNotesView: View {
             }
             .sheet(isPresented: $showingNewNote) {
                 NewNoteView(viewModel: viewModel)
+                    .presentationDetents([.medium, .large]) // it will not take up the entire space
             }
         }
     }
@@ -114,10 +115,10 @@ struct NewNoteView: View {
             }
             .navigationTitle("New Note")
             .navigationBarItems(
-                leading: Button("Cancel") { dismiss() },
-                trailing: Button("Save") {
-                    viewModel.addNote(title: title, content: content, emoji: emoji)
-                    dismiss()
+                trailing: Button(action: { dismiss()}) {
+                    Image(systemName: "x.circle.fill")
+                        .foregroundColor(Color.blue)
+                        .imageScale(.large)
                 }
                 .disabled(title.isEmpty || content.isEmpty)
             )
