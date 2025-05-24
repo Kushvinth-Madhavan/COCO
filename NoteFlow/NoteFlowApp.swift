@@ -3,7 +3,7 @@ import SwiftUI
 import GoogleSignIn
 
 @main
-struct CocoCloneApp: App {
+struct NoteFlow: App {
     @StateObject private var appState = AppState()
     
     init() {

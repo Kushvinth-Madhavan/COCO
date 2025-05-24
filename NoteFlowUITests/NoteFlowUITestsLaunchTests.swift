@@ -1,13 +1,13 @@
 //
-//  COCOUITestsLaunchTests.swift
-//  COCOUITests
+//  NoteFlowUITestsLaunchTests.swift
+//  NoteFlowUITests
 //
 //  Created by Kushvinth Madhavan on 22/05/25.
 //
 
 import XCTest
 
-final class COCOUITestsLaunchTests: XCTestCase {
+final class NoteFlowUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

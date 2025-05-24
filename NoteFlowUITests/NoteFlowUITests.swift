@@ -1,13 +1,13 @@
 //
-//  COCOUITests.swift
-//  COCOUITests
+//  NoteFlowUITests.swift
+//  NoteFlowUITests
 //
 //  Created by Kushvinth Madhavan on 22/05/25.
 //
 
 import XCTest
 
-final class COCOUITests: XCTestCase {
+final class NoteFlowUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

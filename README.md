@@ -1,4 +1,4 @@
-# COCO - Smart Notes App 📝
+# NoteFlow - Smart Notes App 📝
 
 A modern iOS note-taking application built with SwiftUI that focuses on simplicity and seamless Google authentication.
 

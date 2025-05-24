@@ -1,14 +1,14 @@
 //
-//  COCOTests.swift
-//  COCOTests
+//  NoteFlow.swift
+//  NoteFlow
 //
 //  Created by Kushvinth Madhavan on 22/05/25.
 //
 
 import XCTest
-@testable import COCO
+@testable import NoteFlow
 
-final class COCOTests: XCTestCase {
+final class NoteFlowTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

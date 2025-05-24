@@ -36,7 +36,7 @@ struct LoginView: View {
                     .shadow(color: .black.opacity(0.12), radius: 8, x: 0, y: 4)
                 
                 
-                Text("CocoClone")
+                Text("NoteFlow")
                     .font(.system(.largeTitle, weight: .medium))
                 Text("Smart Notes, Effortless Learning")
                     .foregroundStyle(.secondary)
