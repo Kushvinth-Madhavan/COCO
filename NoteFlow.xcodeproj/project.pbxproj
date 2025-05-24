@@ -30,19 +30,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		526F81022DDF090A0024BE09 /* COCO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = COCO.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		526F81142DDF090C0024BE09 /* COCOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = COCOTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		526F811E2DDF090C0024BE09 /* COCOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = COCOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		526F81022DDF090A0024BE09 /* NoteFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoteFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		526F81142DDF090C0024BE09 /* NoteFlowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoteFlowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		526F811E2DDF090C0024BE09 /* NoteFlowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoteFlowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		526F81732DDF12090024BE09 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		526F81492DDF0B5B0024BE09 /* Exceptions for "COCO" folder in "COCO" target */ = {
+		526F81492DDF0B5B0024BE09 /* Exceptions for "COCO" folder in "NoteFlow" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = 526F81012DDF090A0024BE09 /* COCO */;
+			target = 526F81012DDF090A0024BE09 /* NoteFlow */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
@@ -50,7 +50,7 @@
 		526F81042DDF090A0024BE09 /* COCO */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				526F81492DDF0B5B0024BE09 /* Exceptions for "COCO" folder in "COCO" target */,
+				526F81492DDF0B5B0024BE09 /* Exceptions for "COCO" folder in "NoteFlow" target */,
 			);
 			path = COCO;
 			sourceTree = "<group>";
@@ -108,9 +108,9 @@
 		526F81032DDF090A0024BE09 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				526F81022DDF090A0024BE09 /* COCO.app */,
-				526F81142DDF090C0024BE09 /* COCOTests.xctest */,
-				526F811E2DDF090C0024BE09 /* COCOUITests.xctest */,
+				526F81022DDF090A0024BE09 /* NoteFlow.app */,
+				526F81142DDF090C0024BE09 /* NoteFlowTests.xctest */,
+				526F811E2DDF090C0024BE09 /* NoteFlowUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -118,9 +118,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		526F81012DDF090A0024BE09 /* COCO */ = {
+		526F81012DDF090A0024BE09 /* NoteFlow */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 526F81282DDF090D0024BE09 /* Build configuration list for PBXNativeTarget "COCO" */;
+			buildConfigurationList = 526F81282DDF090D0024BE09 /* Build configuration list for PBXNativeTarget "NoteFlow" */;
 			buildPhases = (
 				526F80FE2DDF090A0024BE09 /* Sources */,
 				526F80FF2DDF090A0024BE09 /* Frameworks */,
@@ -133,18 +133,18 @@
 			fileSystemSynchronizedGroups = (
 				526F81042DDF090A0024BE09 /* COCO */,
 			);
-			name = COCO;
+			name = NoteFlow;
 			packageProductDependencies = (
 				526F814B2DDF0D0B0024BE09 /* GoogleSignIn */,
 				526F814D2DDF0D0B0024BE09 /* GoogleSignInSwift */,
 			);
 			productName = COCO;
-			productReference = 526F81022DDF090A0024BE09 /* COCO.app */;
+			productReference = 526F81022DDF090A0024BE09 /* NoteFlow.app */;
 			productType = "com.apple.product-type.application";
 		};
-		526F81132DDF090C0024BE09 /* COCOTests */ = {
+		526F81132DDF090C0024BE09 /* NoteFlowTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 526F812B2DDF090D0024BE09 /* Build configuration list for PBXNativeTarget "COCOTests" */;
+			buildConfigurationList = 526F812B2DDF090D0024BE09 /* Build configuration list for PBXNativeTarget "NoteFlowTests" */;
 			buildPhases = (
 				526F81102DDF090C0024BE09 /* Sources */,
 				526F81112DDF090C0024BE09 /* Frameworks */,
@@ -158,16 +158,16 @@
 			fileSystemSynchronizedGroups = (
 				526F81172DDF090C0024BE09 /* COCOTests */,
 			);
-			name = COCOTests;
+			name = NoteFlowTests;
 			packageProductDependencies = (
 			);
 			productName = COCOTests;
-			productReference = 526F81142DDF090C0024BE09 /* COCOTests.xctest */;
+			productReference = 526F81142DDF090C0024BE09 /* NoteFlowTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		526F811D2DDF090C0024BE09 /* COCOUITests */ = {
+		526F811D2DDF090C0024BE09 /* NoteFlowUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 526F812E2DDF090D0024BE09 /* Build configuration list for PBXNativeTarget "COCOUITests" */;
+			buildConfigurationList = 526F812E2DDF090D0024BE09 /* Build configuration list for PBXNativeTarget "NoteFlowUITests" */;
 			buildPhases = (
 				526F811A2DDF090C0024BE09 /* Sources */,
 				526F811B2DDF090C0024BE09 /* Frameworks */,
@@ -181,11 +181,11 @@
 			fileSystemSynchronizedGroups = (
 				526F81212DDF090C0024BE09 /* COCOUITests */,
 			);
-			name = COCOUITests;
+			name = NoteFlowUITests;
 			packageProductDependencies = (
 			);
 			productName = COCOUITests;
-			productReference = 526F811E2DDF090C0024BE09 /* COCOUITests.xctest */;
+			productReference = 526F811E2DDF090C0024BE09 /* NoteFlowUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -211,7 +211,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 526F80FD2DDF090A0024BE09 /* Build configuration list for PBXProject "COCO" */;
+			buildConfigurationList = 526F80FD2DDF090A0024BE09 /* Build configuration list for PBXProject "NoteFlow" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -228,9 +228,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				526F81012DDF090A0024BE09 /* COCO */,
-				526F81132DDF090C0024BE09 /* COCOTests */,
-				526F811D2DDF090C0024BE09 /* COCOUITests */,
+				526F81012DDF090A0024BE09 /* NoteFlow */,
+				526F81132DDF090C0024BE09 /* NoteFlowTests */,
+				526F811D2DDF090C0024BE09 /* NoteFlowUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -287,12 +287,12 @@
 /* Begin PBXTargetDependency section */
 		526F81162DDF090C0024BE09 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 526F81012DDF090A0024BE09 /* COCO */;
+			target = 526F81012DDF090A0024BE09 /* NoteFlow */;
 			targetProxy = 526F81152DDF090C0024BE09 /* PBXContainerItemProxy */;
 		};
 		526F81202DDF090C0024BE09 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 526F81012DDF090A0024BE09 /* COCO */;
+			target = 526F81012DDF090A0024BE09 /* NoteFlow */;
 			targetProxy = 526F811F2DDF090C0024BE09 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -492,7 +492,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/COCO.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/COCO";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NoteFlow.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NoteFlow";
 			};
 			name = Debug;
 		};
@@ -511,7 +511,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/COCO.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/COCO";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NoteFlow.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NoteFlow";
 			};
 			name = Release;
 		};
@@ -552,7 +552,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		526F80FD2DDF090A0024BE09 /* Build configuration list for PBXProject "COCO" */ = {
+		526F80FD2DDF090A0024BE09 /* Build configuration list for PBXProject "NoteFlow" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				526F81262DDF090D0024BE09 /* Debug */,
@@ -561,7 +561,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		526F81282DDF090D0024BE09 /* Build configuration list for PBXNativeTarget "COCO" */ = {
+		526F81282DDF090D0024BE09 /* Build configuration list for PBXNativeTarget "NoteFlow" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				526F81292DDF090D0024BE09 /* Debug */,
@@ -570,7 +570,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		526F812B2DDF090D0024BE09 /* Build configuration list for PBXNativeTarget "COCOTests" */ = {
+		526F812B2DDF090D0024BE09 /* Build configuration list for PBXNativeTarget "NoteFlowTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				526F812C2DDF090D0024BE09 /* Debug */,
@@ -579,7 +579,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		526F812E2DDF090D0024BE09 /* Build configuration list for PBXNativeTarget "COCOUITests" */ = {
+		526F812E2DDF090D0024BE09 /* Build configuration list for PBXNativeTarget "NoteFlowUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				526F812F2DDF090D0024BE09 /* Debug */,
