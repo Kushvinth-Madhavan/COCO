@@ -28,7 +28,7 @@ struct AllNotesView: View {
                                 .symbolRenderingMode(.monochrome)
                                 .padding(.horizontal)
                                 .foregroundStyle(Color.primary)
-                        })
+                        }) 
                     })
                 }
                 
