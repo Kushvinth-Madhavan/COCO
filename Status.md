@@ -12,10 +12,10 @@
 - Hold to delete note button
 - Other Features
 
+# TODO
 
-
-## Insights by Sr.Dev
-
-NavigationView -> NavigationView || ParentView -> NavigationView
-
- 
+- [ ] Make the New Note Button Work and also align the SF symbol and the Title 
+- [ ] Voice Recording View
+    - [ ] Make the OutputView 
+    - [ ] Import CoreML And make the voice transcription
+    - [ ] Then GROQ WILL TAKE CARE OF THE REST
