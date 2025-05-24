@@ -1,26 +1,6 @@
 # NoteFlow - Smart Notes App 📝
 
-A modern iOS note-taking application built with SwiftUI that focuses on simplicity and seamless Google authentication.
-
-## Features ✨
-
-- **Google Sign-In Integration** 
-  - Secure authentication using Google Sign-In
-  - Persistent login state
-  - Smooth authentication flow with loading states
-  - No UI flicker during auth state restoration
-
-- **Notes Management**
-  - Create and store notes
-  - Rich text support
-  - Emoji support for note categorization
-  - Modern, clean UI design
-
-- **User Experience**
-  - Fluid animations
-  - Responsive interface
-  - Persistent data storage
-  - Optimized performance
+A modern Ai iOS note-taking application built with SwiftUI that focuses on simplicity 
 
 ## Technical Stack 🛠
 
@@ -54,7 +34,8 @@ The app follows MVVM architecture with a focus on:
 - Active Google Cloud Platform account
 
 ## Future Enhancements 🔮
-
+- [ ] Ai Feature
+- [ ] Storeage Session Optimisation 
 - [ ] Note sharing functionality
 - [ ] Cloud sync
 - [ ] Rich text formatting
@@ -75,6 +56,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - Google Sign-In SDK
 - SwiftUI framework
 - The Swift community
+- 
 
 ---
 
