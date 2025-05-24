@@ -37,7 +37,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		526F81492DDF0B5B0024BE09 /* Exceptions for "COCO" folder in "NoteFlow" target */ = {
+		526F81492DDF0B5B0024BE09 /* Exceptions for "NoteFlow" folder in "NoteFlow" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
@@ -47,22 +47,22 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		526F81042DDF090A0024BE09 /* COCO */ = {
+		526F81042DDF090A0024BE09 /* NoteFlow */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				526F81492DDF0B5B0024BE09 /* Exceptions for "COCO" folder in "NoteFlow" target */,
+				526F81492DDF0B5B0024BE09 /* Exceptions for "NoteFlow" folder in "NoteFlow" target */,
 			);
-			path = COCO;
+			path = NoteFlow;
 			sourceTree = "<group>";
 		};
-		526F81172DDF090C0024BE09 /* COCOTests */ = {
+		526F81172DDF090C0024BE09 /* NoteFlowTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = COCOTests;
+			path = NoteFlowTests;
 			sourceTree = "<group>";
 		};
-		526F81212DDF090C0024BE09 /* COCOUITests */ = {
+		526F81212DDF090C0024BE09 /* NoteFlowUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = COCOUITests;
+			path = NoteFlowUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -98,9 +98,9 @@
 			isa = PBXGroup;
 			children = (
 				526F81732DDF12090024BE09 /* README.md */,
-				526F81042DDF090A0024BE09 /* COCO */,
-				526F81172DDF090C0024BE09 /* COCOTests */,
-				526F81212DDF090C0024BE09 /* COCOUITests */,
+				526F81042DDF090A0024BE09 /* NoteFlow */,
+				526F81172DDF090C0024BE09 /* NoteFlowTests */,
+				526F81212DDF090C0024BE09 /* NoteFlowUITests */,
 				526F81032DDF090A0024BE09 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -131,7 +131,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				526F81042DDF090A0024BE09 /* COCO */,
+				526F81042DDF090A0024BE09 /* NoteFlow */,
 			);
 			name = NoteFlow;
 			packageProductDependencies = (
@@ -156,7 +156,7 @@
 				526F81162DDF090C0024BE09 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				526F81172DDF090C0024BE09 /* COCOTests */,
+				526F81172DDF090C0024BE09 /* NoteFlowTests */,
 			);
 			name = NoteFlowTests;
 			packageProductDependencies = (
@@ -179,7 +179,7 @@
 				526F81202DDF090C0024BE09 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				526F81212DDF090C0024BE09 /* COCOUITests */,
+				526F81212DDF090C0024BE09 /* NoteFlowUITests */,
 			);
 			name = NoteFlowUITests;
 			packageProductDependencies = (
@@ -424,11 +424,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"COCO/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"NoteFlow/Preview Content\"";
 				DEVELOPMENT_TEAM = 6863HRRBMF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = COCO/Info.plist;
+				INFOPLIST_FILE = NoteFlow/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -439,7 +439,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Kushvinth.COCO;
+				PRODUCT_BUNDLE_IDENTIFIER = Kushvinth.NoteFlow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -454,11 +454,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"COCO/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"NoteFlow/Preview Content\"";
 				DEVELOPMENT_TEAM = 6863HRRBMF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = COCO/Info.plist;
+				INFOPLIST_FILE = NoteFlow/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -469,7 +469,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Kushvinth.COCO;
+				PRODUCT_BUNDLE_IDENTIFIER = Kushvinth.NoteFlow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
