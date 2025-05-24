@@ -4,7 +4,7 @@ import GoogleSignIn
 
 @main
 struct CocoCloneApp: App {
-    @StateObject private var authManager = AuthenticationManager.shared
+    @StateObject private var appState = AppState()
     
     init() {
         // Configure Google Sign In
@@ -16,11 +16,11 @@ struct CocoCloneApp: App {
     
     var body: some Scene {
         WindowGroup {
-            if authManager.isAuthenticated {
-                AllNotesView()
-            } else {
-                LoginView()
-            }
+            RootView()
+                .environmentObject(appState)
+                .onAppear {
+                    appState.checkSignInStatus()
+                }
         }
     }
 }

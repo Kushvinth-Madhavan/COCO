@@ -13,12 +13,7 @@ class AuthenticationManager: ObservableObject {
     
     static let shared = AuthenticationManager()
     
-    init() {
-        // Check if user is already authenticated
-        if let user = GIDSignIn.sharedInstance.currentUser {
-            updateUserData(user: user)
-        }
-    }
+    private init() {} // Make init private since we're using shared instance
     
     func signIn() {
         guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
@@ -42,7 +37,7 @@ class AuthenticationManager: ObservableObject {
         }
     }
     
-    private func updateUserData(user: GIDGoogleUser) {
+    func updateUserData(user: GIDGoogleUser) {
         userId = user.userID ?? ""
         userEmail = user.profile?.email ?? ""
         displayName = user.profile?.name ?? ""
