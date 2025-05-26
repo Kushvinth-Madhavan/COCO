@@ -51,7 +51,7 @@ struct AllNotesView: View {
             }
             .sheet(isPresented: $showingNewNote) {
                 NewNoteView(viewModel: viewModel)
-                    .presentationDetents([.medium, .large]) // it will not take up the entire space
+                    .presentationDetents([.height(600)]) // it will not take up the entire space
             }
         }
     }
@@ -107,21 +107,43 @@ struct NewNoteView: View {
     @State private var emoji = "📝"
     
     var body: some View {
-        NavigationView {
-            Form {
-                TextField("Title", text: $title)
-                TextField("Content", text: $content)
-                TextField("Emoji", text: $emoji)
-            }
-            .navigationTitle("New Note")
-            .navigationBarItems(
-                trailing: Button(action: { dismiss()}) {
-                    Image(systemName: "x.circle.fill")
+        VStack( ){
+            HStack {
+                Text("New Note")
+                    .font(.title)
+                    .fontWeight(.bold)
+                    .padding(.all)
+                
+                Spacer()
+                Button {
+                    dismiss()
+                } label: {
+                    Image(systemName: "xmark.circle")
+                        .padding(.all)
+                        .font(.title)
                         .foregroundColor(Color.blue)
-                        .imageScale(.large)
                 }
-                .disabled(title.isEmpty || content.isEmpty)
-            )
+            }
+            Button(action: {}){
+                NewNoteCreateTemplateView(title: "Voice Input", symbolName: "waveform")
+            }
+
+            Button(action: {}){
+                NewNoteCreateTemplateView(title: "Upload Audio", symbolName: "record.circle")
+            }
+
+            Button(action: {}){
+                NewNoteCreateTemplateView(title: "Scan Text", symbolName: "document.viewfinder")
+            }
+
+            Button(action: {}){
+                NewNoteCreateTemplateView(title: "Upload Text", symbolName: "mail.and.text.magnifyingglass")
+            }
+
+            Button(action: {}){
+                NewNoteCreateTemplateView(title: "Upload Audio", symbolName: "speaker.wave.3")
+            }
+            Spacer()
         }
     }
 }
