@@ -125,11 +125,11 @@ struct NewNoteView: View {
                 }
             }
             Button(action: {}){
-                NewNoteCreateTemplateView(title: "Voice Input", symbolName: "waveform")
+                NewNoteCreateTemplateView(title: "Recoed audio", symbolName: "waveform")
             }
 
             Button(action: {}){
-                NewNoteCreateTemplateView(title: "Upload Audio", symbolName: "record.circle")
+                NewNoteCreateTemplateView(title: "Upload audio", symbolName: "record.circle")
             }
 
             Button(action: {}){
@@ -141,7 +141,7 @@ struct NewNoteView: View {
             }
 
             Button(action: {}){
-                NewNoteCreateTemplateView(title: "Upload Audio", symbolName: "speaker.wave.3")
+                NewNoteCreateTemplateView(title: "Use a web link", symbolName: "speaker.wave.3")
             }
             Spacer()
         }

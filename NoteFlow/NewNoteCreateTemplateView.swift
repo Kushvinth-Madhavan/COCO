@@ -37,7 +37,7 @@ struct NewNoteCreateTemplateView: View {
                 
                 VStack(alignment: .leading) {
                     Text(title)
-                        .font(.title2)
+                        .font(.callout)
                         .bold()
                         .foregroundStyle(.white)
                 }
