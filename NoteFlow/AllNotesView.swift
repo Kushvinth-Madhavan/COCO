@@ -125,23 +125,23 @@ struct NewNoteView: View {
                 }
             }
             Button(action: {}){
-                NewNoteCreateTemplateView(title: "Recoed audio", symbolName: "waveform")
+                AddNoteFeatures(title: "Recoed audio", symbolName: "waveform")
             }
 
             Button(action: {}){
-                NewNoteCreateTemplateView(title: "Upload audio", symbolName: "record.circle")
+                AddNoteFeatures(title: "Upload audio", symbolName: "record.circle")
             }
 
             Button(action: {}){
-                NewNoteCreateTemplateView(title: "Scan Text", symbolName: "document.viewfinder")
+                AddNoteFeatures(title: "Scan Text", symbolName: "document.viewfinder")
             }
 
             Button(action: {}){
-                NewNoteCreateTemplateView(title: "Upload Text", symbolName: "mail.and.text.magnifyingglass")
+                AddNoteFeatures(title: "Upload Text", symbolName: "mail.and.text.magnifyingglass")
             }
 
             Button(action: {}){
-                NewNoteCreateTemplateView(title: "Use a web link", symbolName: "speaker.wave.3")
+                AddNoteFeatures(title: "Use a web link", symbolName: "speaker.wave.3")
             }
             Spacer()
         }

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct NewNoteCreateTemplateView: View {
+struct AddNoteFeatures: View {
     var title: String
     var symbolName: String
     
