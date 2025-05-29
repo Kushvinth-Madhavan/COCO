@@ -1,5 +1,5 @@
 //
-//  NewNoteCreateTemplateView.swift
+//  AddNoteFeatures.swift
 //  NoteFlow
 //
 //  Created by Kushvinth Madhavan on 26/05/25.

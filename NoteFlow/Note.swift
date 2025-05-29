@@ -14,7 +14,7 @@ struct Note: Identifiable, Codable {
     var content: String
     var emoji: String
     var timestamp: Date
-    
+
     init(id: UUID = UUID(), title: String, content: String, emoji: String = "📝", timestamp: Date = Date()) {
         self.id = id
         self.title = title
