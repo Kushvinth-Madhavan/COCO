@@ -43,6 +43,8 @@ class AuthenticationManager: ObservableObject {
         displayName = user.profile?.name ?? ""
         profilePictureUrl = user.profile?.imageURL(withDimension: 100)?.absoluteString ?? ""
         
+        NotificationCenter.default.post(name: NSNotification.Name("UserSignedIn"), object: nil) // Thanks to SOF, this will redirect the user to the AllNotesView from the auth
+        
         DispatchQueue.main.async { [weak self] in
             self?.isAuthenticated = true
         }

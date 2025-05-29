@@ -42,7 +42,7 @@
 		526F81492DDF0B5B0024BE09 /* Exceptions for "NoteFlow" folder in "NoteFlow" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Info.plist,
+				Resources/Info.plist,
 			);
 			target = 526F81012DDF090A0024BE09 /* NoteFlow */;
 		};

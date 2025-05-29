@@ -19,3 +19,6 @@
     - [ ] Make the OutputView 
     - [ ] Import CoreML And make the voice transcription
     - [ ] Then GROQ WILL TAKE CARE OF THE REST
+
+
+// Learn Navigation stack - kushvinth

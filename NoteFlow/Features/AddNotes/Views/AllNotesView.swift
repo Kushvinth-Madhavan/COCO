@@ -1,8 +1,29 @@
 import SwiftUI
+import Foundation
+import GoogleSignIn
+struct Note: Identifiable, Codable {
+    let id: UUID
+    var title: String
+    var content: String
+    var emoji: String
+    var timestamp: Date
+
+    init(id: UUID = UUID(), title: String, content: String, emoji: String = "📝", timestamp: Date = Date()) {
+        self.id = id
+        self.title = title
+        self.content = content
+        self.emoji = emoji
+        self.timestamp = timestamp
+    }
+}
+
+
 
 struct AllNotesView: View {
     @StateObject private var viewModel = NotesViewModel()
     @State private var showingNewNote = false
+    @State private var showingVoiceInput = false
+
     
     var body: some View {
         NavigationView {
@@ -22,7 +43,9 @@ struct AllNotesView: View {
                 .navigationTitle("All Notes") // thanks to
                 .toolbar {
                     ToolbarItem(placement: .topBarTrailing, content: {
-                        Button(action: {}, label: {
+                        Button(action: {
+                            GIDSignIn.sharedInstance.signOut()
+                        }, label: {
                             Image(systemName: "gear")
                                 .imageScale(.large)
                                 .symbolRenderingMode(.monochrome)
@@ -105,6 +128,7 @@ struct NewNoteView: View {
     @State private var title = ""
     @State private var content = ""
     @State private var emoji = "📝"
+    @State private var showingVoiceInput = false
     
     var body: some View {
         VStack( ){
@@ -124,22 +148,31 @@ struct NewNoteView: View {
                         .foregroundColor(Color.blue)
                 }
             }
-            Button(action: {}){
-                AddNoteFeatures(title: "Recoed audio", symbolName: "waveform")
+            
+            
+            Button(action: {
+                showingVoiceInput = true
+            }) {
+                AddNoteFeatures(title: "Record audio", symbolName: "waveform")
             }
-
+            .sheet(isPresented: $showingVoiceInput) {
+                VoiceInputView()
+                    .interactiveDismissDisabled()
+            }
+            
+            
             Button(action: {}){
                 AddNoteFeatures(title: "Upload audio", symbolName: "record.circle")
             }
-
+            
             Button(action: {}){
                 AddNoteFeatures(title: "Scan Text", symbolName: "document.viewfinder")
             }
-
+            
             Button(action: {}){
                 AddNoteFeatures(title: "Upload Text", symbolName: "mail.and.text.magnifyingglass")
             }
-
+            
             Button(action: {}){
                 AddNoteFeatures(title: "Use a web link", symbolName: "speaker.wave.3")
             }
@@ -147,6 +180,8 @@ struct NewNoteView: View {
         }
     }
 }
+
+
 
 #Preview {
     AllNotesView()

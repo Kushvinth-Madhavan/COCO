@@ -86,15 +86,7 @@ struct LoginView: View {
             .clipped()
             
             Spacer()
-            
-            Button(action: { showingEmailSignup.toggle() }) {
-                Text("Already signed up? Log in")
-                    .foregroundStyle(.secondary)
-                    .font(.footnote)
-            }
-            
-            Spacer()
-                .frame(height: 48)
+                .frame(height: 60)
                 .clipped()
         }
         .frame(maxWidth: .infinity)
