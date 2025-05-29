@@ -39,10 +39,10 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		526F81492DDF0B5B0024BE09 /* Exceptions for "NoteFlow" folder in "NoteFlow" target */ = {
+		529CEA7E2DE849DA001FDA1C /* Exceptions for "NoteFlow" folder in "NoteFlow" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Resources/Info.plist,
+				Info.plist,
 			);
 			target = 526F81012DDF090A0024BE09 /* NoteFlow */;
 		};
@@ -52,7 +52,7 @@
 		526F81042DDF090A0024BE09 /* NoteFlow */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				526F81492DDF0B5B0024BE09 /* Exceptions for "NoteFlow" folder in "NoteFlow" target */,
+				529CEA7E2DE849DA001FDA1C /* Exceptions for "NoteFlow" folder in "NoteFlow" target */,
 			);
 			path = NoteFlow;
 			sourceTree = "<group>";
